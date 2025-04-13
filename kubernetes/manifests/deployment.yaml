@@ -4,7 +4,7 @@ metadata:
   name: edu-app
   namespace: default
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: edu-app
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: edu-app
-        image: nginx:1.27.4
+        image: nginx:1.27.3
         ports:
         - containerPort: 80
